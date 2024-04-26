@@ -1,6 +1,30 @@
+# Pokemon challenge
+
+This project contains a frontend and backend apps for Pokemon challenge.
+
+## Getting Started
+
+#### 1. Install dependencies
+
+`npm install`
+
+#### 2. Start backend
+
+`npm run start:dev`
+
+#### 3. Start frontend
+
+First rename the `.env.example` file to `.env`, then:
+
+`npm run dev`
+
+## E2E Bakend
+
+`npm run test:e2e`
+
 # El Challenge
 
-La aplicación es una batalla de Pokémon. Cada uno tiene diferentes stats, como ataque y defensa, por ejemplo, 
+La aplicación es una batalla de Pokémon. Cada uno tiene diferentes stats, como ataque y defensa, por ejemplo,
 y tenemos que hacerlos batallar entre ellos.
 
 ## Objetivos de Backend
@@ -26,17 +50,19 @@ Para el cálculo de la batalla, ten en consideración lo siguiente:
 - Para calcular el daño, resta la defensa del ataque (ataque-defensa). La diferencia es el daño. Si el ataque es igual o menor que la defensa el daño es 1.
 - El daño lo restas del HP.
 - Los pokemon pelearán por turnos. Todos los turnos serán calculados in el mismo request. Es por esto por lo que el endpoint debe retornar la data del ganador en la misma llamada.
-- El ganador es el que se reste el HP del enemigo a cero. 
+- El ganador es el que se reste el HP del enemigo a cero.
 - NOTA: como adicional se podría implementar el sistema de tipos, pero no es requerido.
 
 ## Tecnología a usar
 
 Backend:
+
 - NestJs
 - Typeorm
 - Sqlite
 
 Frontend:
+
 - React
 - MaterialUI
 
