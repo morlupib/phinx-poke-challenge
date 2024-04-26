@@ -9,7 +9,10 @@ interface PokemonCardProps {
 
 const PokemonCard: FC<PokemonCardProps> = ({ pokemon }) => {
 	return (
-		<Card sx={{ boxShadow: " 0px 3px 8px 0px rgba(0,0,0,0.20)" }}>
+		<Card
+			sx={{ boxShadow: " 0px 3px 8px 0px rgba(0,0,0,0.20)" }}
+			data-testid="pokemon-card-battle"
+		>
 			<CardMedia
 				component="img"
 				alt={pokemon.name}

@@ -22,6 +22,11 @@ First rename the `.env.example` file to `.env`, then:
 
 `npm run test:e2e`
 
+## E2E Frontend
+
+Run both backend and frontend before running the tests:
+`npm run cy:run-e2e`
+
 # El Challenge
 
 La aplicación es una batalla de Pokémon. Cada uno tiene diferentes stats, como ataque y defensa, por ejemplo,

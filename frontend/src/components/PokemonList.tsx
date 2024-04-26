@@ -26,6 +26,7 @@ const PokemonList: FC = () => {
 						cursor: "pointer",
 						boxShadow: " 0px 3px 8px 0px rgba(0,0,0,0.20)",
 					}}
+					data-testid="pokemon-card"
 				>
 					<Box flex={1} alignItems="center">
 						<CardMedia

@@ -17,7 +17,9 @@ const BattleResult: FC<BattleResultProps> = ({ winner }) => {
 			}}
 		>
 			<CardContent sx={{ padding: 3 }}>
-				<Typography variant="h5">{winner.name} wins!</Typography>
+				<Typography variant="h5" data-testid="battle-result">
+					{winner.name} wins!
+				</Typography>
 			</CardContent>
 		</Card>
 	);
